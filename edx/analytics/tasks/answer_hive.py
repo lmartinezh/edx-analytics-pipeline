@@ -259,7 +259,7 @@ class AllProblemCheckEventsTask(AllProblemCheckEventsParamMixin, EventLogSelecti
             """Convert submission to result to be returned."""
             # First augment submission with problem-level information
             # not found in the submission:
-            answer['timestamp'] = timestamp
+            answer['time'] = timestamp
             answer['course_id'] = course_id
             answer['user_id'] = user_id
             answer['problem_id'] = problem_id
